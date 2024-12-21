@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.background img{
+  width: 100%;
+}
+
+h2{
+  z-index: 5;
+  font-size: 4vw;
+  color: rgb(255, 255, 255);
+}
+
+.timeLeft{
+  z-index: 4;
+  color: aliceblue;
+  font-size: 5vw;
+}
