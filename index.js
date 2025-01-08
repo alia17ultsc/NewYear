@@ -7,3 +7,8 @@ function updateTime(){
 }
 
 updateTime();
+
+function showPresentText(presentId){
+  var presentText = document.getElementById(presentId);
+  presentText.style.display="block";
+}
