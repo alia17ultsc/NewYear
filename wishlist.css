@@ -88,7 +88,7 @@ body{
   width: 3vw;
 }
 
-.pc, .pcB, .presentName{
+.pc, .ball, .presentName, .topPart{
   position: absolute;
   left: 20vw;
   top: 37vh;
@@ -100,8 +100,13 @@ body{
   z-index: 8;
 }
 
-.pcB:hover{
+.ball:hover{
   transform: scale(1.2);
+}
+
+.fam, #family{
+  left: 50vw;
+  top: 34vh;
 }
 
 .presentName{
@@ -109,4 +114,28 @@ body{
   left: 19vw;
   text-shadow: 0 0 10px rgb(0, 17, 255);
   display: none;
+}
+
+#family{
+  top: 40vh;
+}
+.trvl, #travel{
+  left: 80vw;
+  top: 35vh;
+}
+
+#travel{
+  left: 78vw;
+  top: 50vh;
+}
+
+.star{
+  position: absolute;
+  top: 13vh;
+  width: 6vw;
+  opacity: 0.7;
+}
+
+.first{
+  left: 13.5vw;
 }

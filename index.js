@@ -11,4 +11,22 @@ updateTime();
 function showPresentText(presentId){
   var presentText = document.getElementById(presentId);
   presentText.style.display="block";
+  setTimeout(hidetxt, 3000, [presentId]);
+}
+
+function hidetxt(presentId){
+  var presentText = document.getElementById(presentId);
+  presentText.style.display="none";
+}
+
+function blueDecorMove() {
+
+var blueDec = document.getElementsByClassName('pc');
+
+  for (var i = 0; i<60; i++){
+    for (var index = 0; index < blueDec.length; index++){
+      blueDec[index].style.width="5vw";
+    }
+
+  }
 }
