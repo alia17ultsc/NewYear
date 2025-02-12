@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist</title>
+  <link rel="stylesheet" href="wishlist.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <img src="pic/decorSide.png" alt="" class="rightDecor">
+  <img src="pic/snow.png" alt="" class="snowFooter">
+  <div class="mainCont">
+    <div class="title presents">Presents</div>
+    <div class="title gratitude">Gratitude</div>
+    <div class="title resolutions">Resolutions</div>
+  </div>
+  <div class="treeCont">
+    <div>
+      <img src="pic/star.png" onclick="blueDecorMove()" alt="" class="star first">
+      <img src="pic/christmas tree.png" alt="" class="christmasTree">
+      <div>
+        <img src="pic/decor1bTop.png" alt="" class="decor pc">
+        <img src="pic/decor1bBottom.png" alt="" class="decor pcB ball" onclick="showPresentText('pc')" >
+        <div id="pc" class="presentName">Computer</div>
+      </div>
+    </div>
+    <div>
+    <img src="pic/christmas tree.png" alt="" class="christmasTree">
+    <div>
+      <img src="pic/decor2r.png" alt="" class="decor fam ball" onclick="showPresentText('family')">
+      <div id="family" class="presentName">Family</div>
+    </div>
+  </div>
+  <div>
+    <img src="pic/christmas tree.png" alt="" class="christmasTree">
+    <div>
+      <img src="pic/decor4gldTop.png" alt="" class="decor trvl topPart">
+      <img src="pic/decor4gldBottom.png" onclick="showPresentText('travel')" alt="" class="decor ball trvl">
+      <div id="travel" class="presentName">To travel to Seoul</div>
+    </div>
+  </div>
+  </div>
+  <div class="clockCont">
+    <img onclick="window.location.href='index.html'" class="clockIcon" src="/pic/clock.png" alt="">
+  </div>
+  
+</body>
+</html>

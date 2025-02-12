@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: titleFont;
+  src: url(carmen.woff2);
+}
+
+body{
+  background-color: rgb(156, 198, 235);
+  overflow: hidden;
+}
+
+.mainCont{
+  display: flex;
+  justify-content: space-around;
+  font-family: titleFont, sans-serif;
+  font-size: 3vw;
+  margin-top: 5vh;
+  cursor:default;
+
+}
+
+.title{
+    text-shadow: 0 0 15px rgb(17, 5, 192);
+    transition: 1s;
+    text-align: center;
+  }
+
+  .title::after{
+   margin-top: 0vh; 
+   background-size: 100%;
+   background-repeat: no-repeat;
+  background-image: url(pic/underline.png);
+  width: 12vw;
+  height: 4vh;
+  display: block;
+  content: '';
+  z-index: 1;
+  }
+
+.title:hover{
+  text-shadow: 0 0 15px rgb(230, 197, 10);
+
+}
+
+.rightDecor{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10vw;
+  z-index: -1;
+}
+
+.treeCont{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+  color: rgb(226, 212, 17);
+  font-family: titleFont, sans-serif;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.christmasTree{
+  width: 33vw;
+}
+
+.snowFooter{
+  position: absolute;
+  width: 100vw;
+  bottom: -23vh;
+  z-index: 8;
+}
+
+.clockCont{
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+}
+
+.clockIcon{
+  width: 4vw;
+}
+
+.decor{
+  width: 3vw;
+}
+
+.pc, .ball, .presentName, .topPart{
+  position: absolute;
+  left: 20vw;
+  top: 37vh;
+  transition: 0.5s;
+  
+}
+
+.pcB{
+  z-index: 8;
+}
+
+.ball:hover{
+  transform: scale(1.2);
+}
+
+.fam, #family{
+  left: 50vw;
+  top: 34vh;
+}
+
+.presentName{
+  top: 50vh;
+  left: 19vw;
+  text-shadow: 0 0 10px rgb(0, 17, 255);
+  display: none;
+}
+
+#family{
+  top: 40vh;
+}
+.trvl, #travel{
+  left: 80vw;
+  top: 35vh;
+}
+
+#travel{
+  left: 78vw;
+  top: 50vh;
+}
+
+.star{
+  position: absolute;
+  top: 13vh;
+  width: 6vw;
+  opacity: 0.7;
+}
+
+.first{
+  left: 13.5vw;
+}

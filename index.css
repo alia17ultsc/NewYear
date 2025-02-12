@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: titleFont;
+  src: url(carmen.woff2);
+}
+
+body{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: titleFont, sans-serif;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.background img{
+  width: 100%;
+}
+
+h2{
+  z-index: 5;
+  font-size: 4vw;
+  color: rgb(255, 255, 255);
+}
+
+.timeLeft{
+  z-index: 4;
+  color: aliceblue;
+  font-size: 5vw;
+}
+
+.wishbtn{
+  width: 100%;
+  z-index: 15;
+}
+
+.present{
+  width: 45vw;
+  position: absolute;
+  left: 25vw;
+  top: 40vh;
+}
