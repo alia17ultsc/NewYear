@@ -6,6 +6,7 @@
   <title>Wishlist</title>
   <link rel="stylesheet" href="wishlist.css">
   <script src="index.js" defer></script>
+  <script src="snow.js" defer></script>
 </head>
 <body>
   <img src="pic/decorSide.png" alt="" class="rightDecor">
@@ -24,6 +25,11 @@
         <img src="pic/decor1bBottom.png" alt="" class="decor pcB ball" onclick="showPresentText('pc')" >
         <div id="pc" class="presentName">Computer</div>
       </div>
+      <div class="posCat">
+        <img src="pic/decor1bTop.png" alt="" class="decor pc">
+        <img src="pic/decor1bBottom.png" alt="" class="decor pcB ball" onclick="showPresentText('cat')" >
+        <div id="cat" class="presentName">cat Sonya</div>
+      </div>
     </div>
     <div>
     <img src="pic/christmas tree.png" alt="" class="christmasTree">
@@ -41,7 +47,7 @@
     </div>
   </div>
   </div>
-  <div class="clockCont">
+  <div class="clockCont" onclick="window.location.href='index.html'">
     <img onclick="window.location.href='index.html'" class="clockIcon" src="/pic/clock.png" alt="">
   </div>
   

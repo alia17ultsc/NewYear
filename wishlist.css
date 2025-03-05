@@ -27,6 +27,7 @@ body{
     text-shadow: 0 0 15px rgb(17, 5, 192);
     transition: 1s;
     text-align: center;
+    user-select: none;
   }
 
   .title::after{
@@ -93,11 +94,12 @@ body{
   left: 20vw;
   top: 37vh;
   transition: 0.5s;
+  z-index: 20;
   
 }
 
 .pcB{
-  z-index: 8;
+  z-index: 80;
 }
 
 .ball:hover{
@@ -139,3 +141,37 @@ body{
 .first{
   left: 13.5vw;
 }
+
+.snowflake{
+  position: absolute;
+  top: -10px;
+  background-image: url(pic/snowflake.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snowfall{
+  position: absolute;
+  top: -10px;
+  background-color: rgb(250, 250, 250);
+  opacity: 0.7;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.posCat{
+  position: relative;
+  left: -8vw;
+  bottom: 60vh;
+}
+
+
+
+
+
+
