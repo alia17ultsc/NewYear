@@ -26,7 +26,6 @@ console.log(`Осталось ${remainingMonths} месяцев, ${remainingDays
 updateTime();
 
 function showPresentText(presentId){
-  console.log('dfxgfgds');
   var presentText = document.getElementById(presentId);
   presentText.style.display="block";
   setTimeout(hidetxt, 3000, [presentId]);

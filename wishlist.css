@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 
 @font-face{
@@ -170,8 +171,30 @@ body{
   bottom: 60vh;
 }
 
+.posFriend{
+  position: relative;
+  left: 0vw;
+  bottom: 70vh;
+}
+/*
+.ball::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  z-index: 50;
+  display: block;
+}
 
-
-
-
-
+*/
+.ball::before{
+  margin-top: 0vh; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+ background-image: url(pic/underline.png);
+ width: 12vw;
+ height: 4vh;
+ display: block;
+ content: '';
+ z-index: 1;
+ }
