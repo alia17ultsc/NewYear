@@ -90,46 +90,36 @@ body{
   width: 3vw;
 }
 
-.pc, .ball, .presentName, .topPart{
-  position: absolute;
-  left: 20vw;
-  top: 37vh;
-  transition: 0.5s;
-  z-index: 20;
-  
+
+
+.balliDesc{
+  position: relative;
+  width: 5vw;
+  text-align: center;
 }
 
-.pcB{
-  z-index: 80;
+
+.TB{ /*class for every top ribbon*/
+  position: relative;
+  top: 1vh;
+  z-index: 100;
+}
+
+
+.ball{
+  transition: 1s;
+    z-index: 80;
 }
 
 .ball:hover{
   transform: scale(1.2);
 }
 
-.fam, #family{
-  left: 50vw;
-  top: 34vh;
-}
+
 
 .presentName{
-  top: 50vh;
-  left: 19vw;
   text-shadow: 0 0 10px rgb(0, 17, 255);
-  display: none;
-}
-
-#family{
-  top: 40vh;
-}
-.trvl, #travel{
-  left: 80vw;
-  top: 35vh;
-}
-
-#travel{
-  left: 78vw;
-  top: 50vh;
+  opacity: 0;
 }
 
 .star{
@@ -165,36 +155,38 @@ body{
   z-index: 1;
 }
 
+.poscomp{
+  left: 35%;
+  top: -40%;
+}
+
+.posFam{
+  left: 50%;
+  top: -34%;
+}
+
 .posCat{
-  position: relative;
-  left: -8vw;
-  bottom: 60vh;
+  left: 70%;
+  bottom: 40%;
 }
 
 .posFriend{
-  position: relative;
-  left: 0vw;
-  bottom: 70vh;
-}
-/*
-.ball::after{
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
-  z-index: 50;
-  display: block;
+  left: 10%;
+  bottom: 30%;
 }
 
-*/
-.ball::before{
-  margin-top: 0vh; 
-  background-size: 100%;
-  background-repeat: no-repeat;
- background-image: url(pic/underline.png);
- width: 12vw;
- height: 4vh;
- display: block;
- content: '';
- z-index: 1;
+
+ .posGym{
+  left: 40%;
+  bottom: 70%;
  }
+
+.posgrades{
+  left: 60%;
+  bottom: 45%;
+}
+
+.postravel{
+  left: 20%;
+  bottom: 15%;
+}

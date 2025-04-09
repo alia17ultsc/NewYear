@@ -27,13 +27,13 @@ updateTime();
 
 function showPresentText(presentId){
   var presentText = document.getElementById(presentId);
-  presentText.style.display="block";
+  presentText.style.opacity="1";
   setTimeout(hidetxt, 3000, [presentId]);
 }
 
 function hidetxt(presentId){
   var presentText = document.getElementById(presentId);
-  presentText.style.display="none";
+  presentText.style.opacity="0";
 }
 
 function blueDecorMove() {
